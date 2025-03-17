@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read name=$Suresh
-read name=$Ramesh
+read $name1=Suresh
+read $name2=Ramesh
 
-echo "Hi $Suresh , How are you"
-echo "Hi $Ramesh , I'm doing well! what abouit you $Suresh"
-echo "I'm good tq! $Ramesh"
+echo "Hi $name1 , How are you"
+echo "Hi $name2 , I'm doing well! what abouit you $name1"
+echo "I'm good tq! $name2"
