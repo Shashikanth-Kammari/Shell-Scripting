@@ -1,3 +1,4 @@
+#!/bin/bash
 
 read name=Suresh
 read name=Ramesh
