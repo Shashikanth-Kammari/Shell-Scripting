@@ -14,8 +14,11 @@ N="-e\[0m"
 VALIDATE(){
     if [ $i -nq 0 ]
     then
-        echo -e "$R FAILURE"
+        echo -e "$2 $R FAILURE $N"
     else
-        echo -e "$G SUCESSES"
+        echo -e "$2 $G SUCESSES $N "
     fi
 }
+
+dnf list installed $i&>>$LOGFILE
+VALIDATE $? "Installationof $i"
