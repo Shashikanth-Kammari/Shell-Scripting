@@ -20,5 +20,5 @@ VALIDATE(){
     fi
 }
 
-dnf list installed $i&>>$LOGFILE
+dnf install $i&>>$LOGFILE
 VALIDATE $? "Installationof $i"
