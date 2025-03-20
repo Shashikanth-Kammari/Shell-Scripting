@@ -1,0 +1,21 @@
+#!/bin/bash
+
+USERID=$(id -u)
+TIMESTAMP=$(date +%f+%H+%M+%S)
+SCRIPTNAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/temp/SCRIPTNAME-TIMESTAMP.log
+
+R="-e\[31m"
+G="-e\[32m"
+Y="-e\[33m"
+N="-e\[0m"
+
+
+VALIDATE(){
+    if [ $i -nq 0 ]
+    then
+        echo -e "$R FAILURE"
+    else
+        echo -e "$G SUCESSES"
+    fi
+}
