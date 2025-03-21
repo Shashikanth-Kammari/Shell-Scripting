@@ -19,6 +19,5 @@ VALIDATE(){
         echo -e "$2 $G SUCESSES $N "
     fi
 }
-
 dnf install $i&>>$LOGFILE
 VALIDATE $? "Installationof $i"
