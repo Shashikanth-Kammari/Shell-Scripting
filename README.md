@@ -14,6 +14,8 @@ For Process ID of the current shellscript - **echo $$**
 For Process ID of last background command - **echo $!**
 For the exit status of the last command - **echo $?**
 
+Step1 : git clone < URL >
+
 
 
 
