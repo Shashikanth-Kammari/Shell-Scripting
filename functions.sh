@@ -7,7 +7,7 @@ TIMESTAMP=$(date +%f-%H-%M-%S)
 LOGFILE=/tmp/$SCRIPTNAME_$TIMESTAMP.log
 
 VALIDATE(){
-    if($1 -ne 0)
+    if [ $1 -ne 0 ]
         echo "$2.....FAILURE"
         exit 1
     else
