@@ -39,6 +39,6 @@ do
         VALIDATE $? "Installation $i"
     fi
 done
-
-
 #Run as a root user  sudo sh <scriptname>.sh mysql git 
+
+#we need to give the variable as a paramaeters
