@@ -2,7 +2,7 @@
 
 source ./common.sh
 
-check-root()
+check-root  #function name of common.sh script from parent to child
 
 for i in $@
 do
