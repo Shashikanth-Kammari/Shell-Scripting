@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DISK_USAGE=$(df -hT | grep xfs)    
-THRESHOLD=15
+THRESHOLD=75
 MASSEGE=""
 
 while IFS=read -r line
